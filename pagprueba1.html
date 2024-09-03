@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡¡Y TÚ ¿Qué Piensas?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px; /* Puedes ajustar el tamaño de la imagen aquí */
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #ff6b6b;
+        }
+
+        .hero {
+            background-image: url('https://i.ibb.co/5svqWFd/imagen.jpg'); /* Enlace directo a la imagen de alta resolución */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+            z-index: 1;
+        }
+
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejorar la legibilidad */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .grid-item {
+            flex: 1 1 calc(33.333% - 40px);
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://scontent.fjal2-1.fna.fbcdn.net/v/t39.30808-6/457297227_122097808184504333_9132184368950722953_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7xmX36yypB4Q7kNvgFDXxRH&_nc_ht=scontent.fjal2-1.fna&_nc_gid=AKq5-KOO2a7R4ZnGGH9dZhO&oh=00_AYAdv51CrlPq-PSmMq5Q1YyqJ5KsTxXB96JKLFt_yA3Pzg&oe=66DD422A" alt="Logo ¡¡Y TÚ ¿Qué Piensas?">
+        <h1>¡¡Y TÚ ¿Qué Piensas?</h1>
+    </header>
+
+    <nav>
+        <a href="#historias">Historias</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#imagenes">Imágenes</a>
+        <a href="#podcasts">Podcasts</a>
+        <a href="#videos">Videos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Comparte tus pensamientos, historias y más</h2>
+        <p>Explora, aprende y discute con nuestra comunidad</p>
+    </div>
+
+    <div class="container" id="historias">
+        <h2 class="section-title">Historias Destacadas</h2>
+        <div class="grid">
+            <div class="grid-item">Historia 1</div>
+            <div class="grid-item">Historia 2</div>
+            <div class="grid-item">Historia 3</div>
+        </div>
+    </div>
+
+    <div class="container" id="noticias">
+        <h2 class="section-title">Últimas Noticias</h2>
+        <div class="grid">
+            <div class="grid-item">Noticia 1</div>
+            <div class="grid-item">Noticia 2</div>
+            <div class="grid-item">Noticia 3</div>
+        </div>
+    </div>
+
+    <div class="container" id="imagenes">
+        <h2 class="section-title">Imágenes Inspiradoras</h2>
+        <div class="grid">
+            <div class="grid-item">Imagen 1</div>
+            <div class="grid-item">Imagen 2</div>
+            <div class="grid-item">Imagen 3</div>
+        </div>
+    </div>
+
+    <div class="container" id="podcasts">
+        <h2 class="section-title">Nuestros Podcasts</h2>
+        <div class="grid">
+            <div class="grid-item">Podcast 1</div>
+            <div class="grid-item">Podcast 2</div>
+            <div class="grid-item">Podcast 3</div>
+        </div>
+    </div>
+
+    <div class="container" id="videos">
+        <h2 class="section-title">Videos Recientes</h2>
+        <div class="grid">
+            <div class="grid-item">Video 1</div>
+            <div class="grid-item">Video 2</div>
+            <div class="grid-item">Video 3</div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <p>Conéctate con nosotros en redes sociales:</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/TyTJ9xd8b97jZigg/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+            <a href="https://youtube.com/@ytuquepiensas-m3n?si=_T0iXLQu8FEFQQw0" target="_blank">YouTube</a>
+        </div>
+        <p>&copy; 2024 ¡¡Y TÚ ¿Qué Piensas? Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
